@@ -1,6 +1,6 @@
 # InfoAmazonia Rivers Map
 
-This is work in progress project to create a rivers map to InfoAmazonia based on OpenStreetMap data.
+This is *work in progress* project to create a rivers map to InfoAmazonia, based on OpenStreetMap data.
 
 ## Requirements
 
@@ -11,9 +11,9 @@ This is work in progress project to create a rivers map to InfoAmazonia based on
 
 ## Prepare the data
 
-1. Download [South America OpenStreetMap data file](http://download.geofabrik.de/south-america-latest.osm.pbf).
+Download [South America OpenStreetMap data file](http://download.geofabrik.de/south-america-latest.osm.pbf).
 
-2. Extract waterways using Osmosis:
+Extract waterways using Osmosis:
 
 ```
 osmosis \
@@ -56,10 +56,12 @@ osmosis \
   --wx waterways.osm
 ```
 
-1. In PostgreSQL, create a database named 'riversmap' and run:
+In PostgreSQL, create a database named 'riversmap' and run:
 
-	osm2pgsql -d riversmap waterways.osm 
+```
+osm2pgsql -d riversmap waterways.osm 
+```
 
-### Create the map in TileMill
+### Generate a map in TileMill
 
 To be done.
