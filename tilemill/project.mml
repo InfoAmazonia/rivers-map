@@ -1,0 +1,210 @@
+{
+  "bounds": [
+    -94.9219,
+    -56.7527,
+    -32.5196,
+    21.1255
+  ],
+  "center": [
+    -77.6953,
+    -7.6239,
+    4
+  ],
+  "format": "png",
+  "interactivity": false,
+  "minzoom": 4,
+  "maxzoom": 10,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      },
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -94.84447964501423,
+        -58.139868299742325,
+        -18.84353324350174,
+        24.12372785945692
+      ],
+      "id": "srtm500m3785hillshad",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/julianamori/Desktop/infoAmazonia/DADOS/Andes_Agua_Amazonia/bases_relevo/CGIAR-CSI_SRTM/SRTM_500m_TIF/SRTM_500m_3785_clipped_hillshade.tif"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "srtm500m3785hillshad",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -94.84447964501423,
+        -58.139868299742325,
+        -18.84353324350174,
+        24.12372785945692
+      ],
+      "id": "srtm500m3785slopesha",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/julianamori/Desktop/infoAmazonia/DADOS/Andes_Agua_Amazonia/bases_relevo/CGIAR-CSI_SRTM/SRTM_500m_TIF/SRTM_500m_3785_clipped_slopeshade.tif"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "srtm500m3785slopesha",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -94.84447964501423,
+        -58.139868299742325,
+        -18.84353324350174,
+        24.12372785945692
+      ],
+      "id": "srtm500m3785outputco",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/julianamori/Desktop/infoAmazonia/DADOS/Andes_Agua_Amazonia/bases_relevo/CGIAR-CSI_SRTM/SRTM_500m_TIF/SRTM_500m_3785_06_colorRelief_low.tif"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "srtm500m3785outputco",
+      "status": "off"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.15166732835152,
+        -55.96969001797988,
+        -34.801393126384106,
+        12.610306570986655
+      ],
+      "id": "osmwaterareas",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/julianamori/Desktop/infoAmazonia/DADOS/osm_water_sa/osm_waterareas/osm_waterareas.shp"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "osmwaterareas",
+      "status": "off"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -176.88040743508446,
+        -55.26862621162363,
+        -34.800021679386866,
+        12.51789558558446
+      ],
+      "id": "osmwaterways",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/julianamori/Desktop/infoAmazonia/DADOS/osm_water_sa/osm_waterways/osm_waterways.shp"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "osmwaterways",
+      "status": "off"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -180,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "10mbathymetry",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/physical/10m-bathymetry.zip"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "10mbathymetry",
+      "status": "off"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -61.43079932605306,
+        -6.694850955403674,
+        -59.072899930991674,
+        -1.9868881484777843
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "planet_osm_point",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "-6838445.3,-746969.1,-6575965.14,-221223.72",
+        "host": "localhost",
+        "port": "5432",
+        "user": "vitor",
+        "dbname": "watermap",
+        "id": "test",
+        "project": "IA-rivers-map",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "id": "test",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "test"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -56.26755714892723,
+        -3.0217885987403466,
+        -53.751941258085225,
+        -0.15795928996833178
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "planet_osm_roads",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "-6263675.81,-336540.02,-5983638.73,-17583.97",
+        "dbname": "watermap",
+        "host": "localhost",
+        "port": "5432",
+        "user": "vitor"
+      },
+      "id": "teste2",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "teste2"
+    }
+  ],
+  "scale": 2,
+  "metatile": 2,
+  "name": "",
+  "description": "",
+  "attribution": ""
+}

@@ -1,2 +1,5 @@
 data/*
 *.osm
+*.qgs~
+*.png
+tilemill/layers/*
