@@ -56,10 +56,10 @@ osmosis \
   --wx waterways.osm
 ```
 
-In PostgreSQL, create a database named 'riversmap' and run:
+In PostgreSQL, create a database named 'rivers' and run:
 
 ```
-osm2pgsql -d riversmap waterways.osm 
+osm2pgsql -d rivers waterways.osm 
 ```
 
 ### Generate a map in TileMill
