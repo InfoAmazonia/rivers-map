@@ -64,4 +64,4 @@ osm2pgsql -d rivers waterways.osm
 
 ### Generate a map in TileMill
 
-To be done.
+Create a symlink in your TileMill folder to `tilemill` directory of this repository.
