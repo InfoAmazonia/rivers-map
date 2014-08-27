@@ -1,78 +1,50 @@
+// pallete
+@water:#117e9f;
+@text:#fff;
+@text-border:#273e5b;
+
 #waterways {  
   [waterway='river'] {
-    line-color: #117e9f;
+    line-color: @water;
     line-width: 0.2;
     [zoom>6] {
       line-width: 0.5;      
     }
   }
     
-  [zoom>=10] {
-       
-	[waterway='stream'] {
-      line-color: #117e9f;
+  [waterway='stream'][zoom>=10] {
+      line-color: @water;
       line-width: 0.5;
-    }
-  }
-  
-  // labels
-  [zoom>=11] {
-    ::labels{
-      text-name: "[name]";
-      text-face-name:"Arial Bold";
-      text-fill: #7096bd;
-      text-size: 10;
-      text-placement: line;
-      text-dy: 10;
-      text-max-char-angle-delta: 15;
-    }
-  }
+  }  
 }
 
 #waterareas {
   line-color:#093d52;
   line-width:0.5;
   polygon-opacity:1;
-  polygon-fill:#117e9f;
+  polygon-fill:@water;
 }
 
 
-/*
-#waterways {
- 
-  [zoom>=8]{ 
-    ::labels{
-      text-name: "[name]";
-      text-face-name:"Arial Bold";
-      text-halo-fill: #3d3d3d;
-      text-size:08;
-      text-fill:#b5cde8;
-      text-line-spacing: 10; 
-      text-allow-overlap: false;
+#labels {
+	[zoom>=9]{
+    	::labels {
+  			text-name: [name];
+  			text-face-name: 'Arial Bold';
+  			text-fill: @text;
+  			text-size: 10;
+      		text-placement: line;
+        	text-halo-fill: fadeout(@text-border, 20%);
+			text-halo-radius: 1;
+            text-max-char-angle-delta: 15;
+      
+      		[zoom>=11]{
+	  			text-size: 15;  	
+    		}
+      
+            [zoom>=13]{
+	  			text-size: 20;  	
+    		}
+    	}
     }
-
-    [zoom>=9]{ 
-      ::labels{ 
-        text-name: "[name]";
-        text-face-name:"Arial Bold";
-        text-halo-fill: #3d3d3d;
-        text-size: 10;
-        text-fill:#b5cde8;
-        //text-line-spacing: 20; 
-        text-allow-overlap: false;
-      }
-    }
-
-   [zoom>=11]{ 
-      ::labels{
-        text-name: "[name]";
-        text-face-name:"Arial Bold";
-        text-halo-fill: #3d3d3d;
-        text-size: 12;
-        text-fill:#b5cde8;
-        //text-line-spacing: 20; 
-        text-allow-overlap: false;
-      }
-    }
-  }
-}*/
+}
