@@ -1,13 +1,13 @@
 #!/bin/bash
 
-osmosis \
-  --rb data/south-america-latest.osm.pbf \
+~/osmosis/bin/osmosis \
+  --rb data/osm/south-america-latest.osm.pbf \
   --tf accept-relations waterway=*\
   --used-way \
   --used-node \
   outPipe.0=RW \
   \
-  --rb data/south-america-latest.osm.pbf \
+  --rb data/osm/south-america-latest.osm.pbf \
   --tf accept-relations natural=water \
   --used-way \
   --used-node \
@@ -18,13 +18,13 @@ osmosis \
   	inPipe.1=RN \
   	outPipe.0=R \
   \
-  --rb data/south-america-latest.osm.pbf \
+  --rb data/osm/south-america-latest.osm.pbf \
   --tf accept-ways waterway=* \
   --tf reject-relations \
   --used-node \
    outPipe.0=WW \
   \
-  --rb data/south-america-latest.osm.pbf \
+  --rb data/osm/south-america-latest.osm.pbf \
   --tf accept-ways natural=water \
   --tf reject-relations \
   --used-node \
