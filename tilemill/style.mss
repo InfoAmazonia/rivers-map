@@ -27,7 +27,7 @@
 
 
 #labels {
-	[zoom>=9]{
+	[zoom>=8]{
     	::labels {
   			text-name: [name];
   			text-face-name: 'Arial Bold';
@@ -38,13 +38,6 @@
 			text-halo-radius: 1;
             text-max-char-angle-delta: 15;
       
-      		[zoom>=11]{
-	  			text-size: 15;  	
-    		}
-      
-            [zoom>=13]{
-	  			text-size: 20;  	
-    		}
     	}
     }
 }
